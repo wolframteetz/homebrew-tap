@@ -11,7 +11,7 @@ class Macdup < Formula
     ENV.deparallelize
     ENV.no_optimization
     bin.install "macdup"
-    system "[prefix]"
+    system Dir["prefix"]
   end
 
   test do
