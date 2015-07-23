@@ -11,7 +11,8 @@ class Macdup < Formula
     ENV.deparallelize
     ENV.no_optimization
     bin.install "macdup"
-    system "find . -name macdup"
+    system "find .. -name macdup"
+    system "pwd"
   end
 
   test do
