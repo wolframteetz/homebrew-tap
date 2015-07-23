@@ -15,7 +15,7 @@ class Macdup < Formula
   end
 
   test do
-  system "chmod 0555 bin/macdup"
+  system "chmod 0555 /usr/local/bin/macdup"
     # Run the test with `brew test macdup`. Options passed
     # to `brew install` such as `--HEAD` also need to be provided to `brew test`.
     #
