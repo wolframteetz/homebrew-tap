@@ -8,11 +8,13 @@ class Macdup < Formula
   depends_on "jq"
   
   def install
+    ENV.deparallelize
+    ENV.no_optimization
     bin.install "macdup"
+    system "chmod 0555 /usr/local/bin/macdup"
   end
 
   test do
-    system "chmod 0555 /usr/local/bin/macdup"
     # Run the test with `brew test macdup`. Options passed
     # to `brew install` such as `--HEAD` also need to be provided to `brew test`.
     #
