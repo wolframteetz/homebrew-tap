@@ -11,11 +11,11 @@ class Macdup < Formula
     ENV.deparallelize
     ENV.no_optimization
     bin.install "macdup"
-    system "chmod 0555 bin/macdup"
+    system "find . -name macdup"
   end
 
   test do
-    
+  system "chmod 0555 bin/macdup"
     # Run the test with `brew test macdup`. Options passed
     # to `brew install` such as `--HEAD` also need to be provided to `brew test`.
     #
