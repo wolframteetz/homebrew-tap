@@ -19,9 +19,9 @@ class Macdup < Formula
       #puts "Please enter your WOT Server (e.g. eu) : "
       #userServer = gets.chomp
       #inreplace "macdup", "userServer", userServer
-      chmod u+w, Dir["#{bin}/macdup"]
+      chmod 0755, Dir["#{bin}/macdup"]
       system "/Applications/TextEdit.app/Contents/MacOS/TextEdit /usr/local/bin/macdup"
-      chmod u-w, Dir["#{bin}/macdup"]
+      chmod 0555, Dir["#{bin}/macdup"]
       puts "Installation complete."
     # Run the test with `brew test macdup`. Options passed
     # to `brew install` such as `--HEAD` also need to be provided to `brew test`.
