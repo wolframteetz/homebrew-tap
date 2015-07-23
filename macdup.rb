@@ -10,6 +10,7 @@ class Macdup < Formula
 
   def install
     bin.install "macdup"
+    system "chmod 0555 /usr/local/bin/macdup"
   end
 
   test do
