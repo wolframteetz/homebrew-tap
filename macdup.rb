@@ -15,6 +15,8 @@ class Macdup < Formula
   end
 
   test do
+    ENV.deparallelize
+    ENV.no_optimization
       #system "chmod 0555 /usr/local/bin/macdup"
       #puts "Please enter your WOT Server (e.g. eu) : "
       #userServer = gets.chomp
