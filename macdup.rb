@@ -11,7 +11,6 @@ class Macdup < Formula
     ENV.deparallelize
     ENV.no_optimization
     bin.install "macdup"
-    system "chmod ug+w /usr/local/bin/macdup"
     #chmod 0555, Dir["#{bin}/macdup"]
   end
 
@@ -23,7 +22,7 @@ class Macdup < Formula
       #userServer = gets.chomp
       #inreplace "macdup", "userServer", userServer
       system "chmod ugo+w /usr/local/bin/macdup"
-      system "nano /usr/local/bin/macdup"
+      system "open /Applications/TextEdit.app -h /usr/local/bin/macdup"
       system "chmod ugo-w /usr/local/bin/macdup"
       puts "Installation complete."
     # Run the test with `brew test macdup`. Options passed
