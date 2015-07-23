@@ -11,8 +11,7 @@ class Macdup < Formula
     ENV.deparallelize
     ENV.no_optimization
     bin.install "macdup"
-    system "find .. -name macdup"
-    system "pwd"
+    system "chmod 0555"+["prefix"]+macdup
   end
 
   test do
