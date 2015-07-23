@@ -16,7 +16,17 @@ class Macdup < Formula
 
   test do
   #system "chmod 0555 /usr/local/bin/macdup"
+      puts "Please enter your vBAddict User Name : "
+      userName = gets.chomp
+      puts "Please enter your vBAddict Token (from http://www.vbaddict.net/token.php) : "
+      userToken = gets.chomp
+      puts "Please enter your WOT Server (e.g. eu) : "
+      userServer = gets.chomp
+      inreplace "macdup", "userName", userName
+      inreplace "macdup", "userToken", userToken
+      inreplace "macdup", "userServer", userServer
       chmod 0555, Dir["#{bin}/macdup"]
+      puts "Installation complete."
     # Run the test with `brew test macdup`. Options passed
     # to `brew install` such as `--HEAD` also need to be provided to `brew test`.
     #
