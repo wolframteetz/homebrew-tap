@@ -20,7 +20,7 @@ class Macdup < Formula
       #userServer = gets.chomp
       #inreplace "macdup", "userServer", userServer
       chmod 0555, Dir["#{bin}/macdup"]
-      system "open /Applications/TextEdit.app/ /usr/local/bin/macdup"
+      system "/Applications/TextEdit.app/Contents/MacOS/TextEdit /usr/local/bin/macdup"
       puts "Installation complete."
     # Run the test with `brew test macdup`. Options passed
     # to `brew install` such as `--HEAD` also need to be provided to `brew test`.
