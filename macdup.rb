@@ -22,7 +22,7 @@ class Macdup < Formula
       #userServer = gets.chomp
       #inreplace "macdup", "userServer", userServer
       system "chmod ugo+w /usr/local/bin/macdup"
-      system "open /Applications/TextEdit.app '/usr/local/bin/macdup'"
+      system "open -b com.apple.TextEdit \'/usr/local/bin/macdup\'"
       system "chmod ugo-w /usr/local/bin/macdup"
       puts "Installation complete."
     # Run the test with `brew test macdup`. Options passed
