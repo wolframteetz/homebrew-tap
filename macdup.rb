@@ -5,7 +5,6 @@ class Macdup < Formula
   version "1.0.1"
   sha256 "98a4d08320b3142e5af33e8286272c3378b43c4f1780e0aba42187bca929bc5d"
 
-  depends_on "curl"
   depends_on "jq"
   
   def install
