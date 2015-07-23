@@ -11,7 +11,7 @@ class Macdup < Formula
     ENV.deparallelize
     ENV.no_optimization
     bin.install "macdup"
-    chmod 0555, Dir["#{bin}/macdup"]
+    #chmod 0555, Dir["#{bin}/macdup"]
   end
 
   test do
@@ -19,8 +19,9 @@ class Macdup < Formula
       #puts "Please enter your WOT Server (e.g. eu) : "
       #userServer = gets.chomp
       #inreplace "macdup", "userServer", userServer
-      chmod 0555, Dir["#{bin}/macdup"]
+      chmod u+w, Dir["#{bin}/macdup"]
       system "/Applications/TextEdit.app/Contents/MacOS/TextEdit /usr/local/bin/macdup"
+      chmod u-w, Dir["#{bin}/macdup"]
       puts "Installation complete."
     # Run the test with `brew test macdup`. Options passed
     # to `brew install` such as `--HEAD` also need to be provided to `brew test`.
