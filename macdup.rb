@@ -21,7 +21,7 @@ class Macdup < Formula
       #puts "Please enter your WOT Server (e.g. eu) : "
       #userServer = gets.chomp
       #inreplace "macdup", "userServer", userServer
-      system "chmod u+w /usr/local/Cellar/macdup/1.0.3/bin/macdup"
+      system "sudo -l $user chmod u+w /usr/local/Cellar/macdup/1.0.3/bin/macdup"
       system "open -b com.apple.TextEdit \'/usr/local/Cellar/macdup/1.0.3/bin/macdup\'"
       puts "Installation complete."
     # Run the test with `brew test macdup`. Options passed
