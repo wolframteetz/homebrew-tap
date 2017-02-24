@@ -1,7 +1,7 @@
 class Macdup < Formula
   desc "Macintosh Dossier UPloader for World of Tanks - vBAddict"
   homepage "https://github.com/wolframteetz/macdup"
-  url "https://github.com/wolframteetz/macdup/archive/1.0.4.tar.gz"
+  url "https://github.com/wolframteetz/macdup/archive/1.0.3.tar.gz"
   version "1.0.4"
   sha256 "45f6262057f3b03c2d8bce18964d99fb410e9a7321142dd507f5e3a3b4f27cb1"
 
