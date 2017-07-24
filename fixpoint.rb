@@ -1,4 +1,4 @@
-class FixPoint < Formula
+class Fixpoint < Formula
   desc "Fixpoint - Powerpoint video fix for iPhone/MOV videos recorded on OSX so they play nicely on windows"
   homepage "https://github.com/wolframteetz/fixpoint"
   url "https://github.com/wolframteetz/fixpoint/archive/1.0.0.tar.gz"
