@@ -3,7 +3,7 @@ class Fixpoint < Formula
   homepage "https://github.com/wolframteetz/fixpoint"
   url "https://codeload.github.com/wolframteetz/FixPoint/zip/master"
   version "1.0.2"
-#  sha256 "45f6262057f3b03c2d8bce18964d99fb410e9a7321142dd507f5e3a3b4f27cb1"
+  sha256 "6f978b9ba1d80cbc66ebe6e0ce0d71d0c789132011c7525d6afe807e691ec62c"
 
   depends_on "ffmpeg"
   
