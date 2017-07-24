@@ -10,7 +10,7 @@ class Fixpoint < Formula
   def install
     ENV.deparallelize
     ENV.no_optimization
-    bin.install "fixpoint"
+    bin.install "fixpoint.sh"
     #chmod 0555, Dir["#{bin}/macdup"]
   end
 
