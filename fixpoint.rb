@@ -1,8 +1,8 @@
 class Fixpoint < Formula
   desc "Fixpoint - Powerpoint video fix for iPhone/MOV videos recorded on OSX so they play nicely on windows"
   homepage "https://github.com/wolframteetz/fixpoint"
-  url "https://github.com/wolframteetz/fixpoint/archive/1.0.0.tar.gz"
-  version "1.0.1"
+  url "https://codeload.github.com/wolframteetz/FixPoint/zip/master"
+  version "1.0.2"
 #  sha256 "45f6262057f3b03c2d8bce18964d99fb410e9a7321142dd507f5e3a3b4f27cb1"
 
   depends_on "ffmpeg"
