@@ -9,15 +9,15 @@ class FlattenTif < Formula
   
   def install
     ENV.deparallelize
-    ENV.no_optimization
     bin.install "flatten_tif"
     bin.install "flatten_all_tifs"
-    #chmod 0555, Dir["#{bin}/macdup"]
+    chmod 0555, Dir["#{bin}/flatten_tif"]
+    chmod 0555, Dir["#{bin}/flatten_all_tifs"]
   end
 
   test do
     ENV.deparallelize
-    ENV.no_optimization
+      chmod 0555, Dir["#{bin}/macdup"]
       puts "Installation complete, run with e.g. bash> flatten_all_tifs *.tif"
   end
 end
