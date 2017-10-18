@@ -1,3 +1,4 @@
+require "fileutils"
 class FlattenTif < Formula
   desc "Flatten_tif - Flatten TIFF files on OSX"
   homepage "https://github.com/wolframteetz/ocrtools"
@@ -17,7 +18,7 @@ class FlattenTif < Formula
 
   test do
     ENV.deparallelize
-      chmod 0555, Dir["/usr/local/bin/flatten_all_tifs"]
+      FileUtils.chmod 0755, flatten_all_tifs
       puts "Installation complete, run with e.g. bash> flatten_all_tifs *.tif"
   end
 end
