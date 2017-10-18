@@ -2,7 +2,7 @@ class FlattenTif < Formula
   desc "Flatten_tif - Flatten TIFF files on OSX"
   homepage "https://github.com/wolframteetz/ocrtools"
   url "https://api.github.com/repos/wolframteetz/ocrtools/tarball/master"
-  version "1.1.2"
+  version "1.1.3"
   sha256 "8b81e7c10b69d2fe65281f3dd751ae9bf2ecea5930f1b0a5d76ff494480eb67a"
 
   depends_on "imagemagick"
