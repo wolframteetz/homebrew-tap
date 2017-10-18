@@ -2,10 +2,13 @@ class FlattenTif < Formula
   desc "Flatten_tif - Flatten TIFF files on OSX"
   homepage "https://github.com/wolframteetz/ocrtools"
   url "https://api.github.com/repos/wolframteetz/ocrtools/tarball/master"
-  version "1.0.9"
-  sha256 "ff8fee4a3836a101b234a3ce7c7f3719d67baf527393b23ef60f99ee50cc8422"
+  version "1.1.0"
+  sha256 "948e909012e52dcc7a363d2492ac2d89521f75487cf1b7679ff14f53ccaef4dd"
 
   depends_on "imagemagick"
+  depends_on "python3"
+  depends_on "pyqt"
+  depends_on "jq"
   
   def install
     ENV.deparallelize
