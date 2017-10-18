@@ -17,7 +17,7 @@ class FlattenTif < Formula
 
   test do
     ENV.deparallelize
-      chmod ugo+x, Dir["/usr/local/bin/flatten_all_tifs"]
+      chmod 0555, Dir["/usr/local/bin/flatten_all_tifs"]
       puts "Installation complete, run with e.g. bash> flatten_all_tifs *.tif"
   end
 end
