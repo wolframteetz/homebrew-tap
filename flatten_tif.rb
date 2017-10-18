@@ -3,7 +3,7 @@ class FlattenTif < Formula
   homepage "https://github.com/wolframteetz/ocrtools"
   url "https://api.github.com/repos/wolframteetz/ocrtools/tarball/master"
   version "1.0.0"
-  sha256 "1e43e27b6b4d33834ce15998b4a921f7b94b75981c0cebb04b88da74cc559834"
+  sha256 "f691f068a1bb82ec047604b81d2a2f2d6807b19af65b0735d31701b0b0421fae"
 
   depends_on "imagemagick"
   
